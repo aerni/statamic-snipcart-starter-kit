@@ -4,8 +4,70 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f998813bae739e7fe007dc5cd28e2773",
+    "content-hash": "3e4ffa3d783ddc9ca317b0d7d94564c3",
     "packages": [
+        {
+            "name": "aerni/snipcart",
+            "version": "v1.0.0-beta.8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/aerni/statamic-snipcart.git",
+                "reference": "4ce8ed5a07c8f4ced508ab520692e8162af4d79f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/aerni/statamic-snipcart/zipball/4ce8ed5a07c8f4ced508ab520692e8162af4d79f",
+                "reference": "4ce8ed5a07c8f4ced508ab520692e8162af4d79f",
+                "shasum": ""
+            },
+            "require": {
+                "calebporzio/sushi": "^2.0",
+                "php": "^7.2.5",
+                "statamic/cms": "^3.0@beta"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.16",
+                "nunomaduro/collision": "^5.0",
+                "orchestra/testbench": "^5.0",
+                "phpunit/phpunit": "^9.0"
+            },
+            "type": "library",
+            "extra": {
+                "statamic": {
+                    "name": "Snipcart",
+                    "description": "A Snipcart addon for Statamic"
+                },
+                "laravel": {
+                    "providers": [
+                        "Aerni\\Snipcart\\ServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Aerni\\Snipcart\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Aerni",
+                    "email": "hello@michaelaerni.ch",
+                    "homepage": "https://www.michaelaerni.ch",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A Snipcart addon for Statamic",
+            "homepage": "https://github.com/aerni/statamic-snipcart",
+            "keywords": [
+                "snipcart",
+                "statamic"
+            ],
+            "time": "2020-07-30T10:14:41+00:00"
+        },
         {
             "name": "asm89/stack-cors",
             "version": "1.3.0",
@@ -109,6 +171,56 @@
                 }
             ],
             "time": "2020-04-15T15:59:35+00:00"
+        },
+        {
+            "name": "calebporzio/sushi",
+            "version": "v2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/calebporzio/sushi.git",
+                "reference": "df69a1af1fbbc0aed96f6563770f8d79fe0eb6a5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/calebporzio/sushi/zipball/df69a1af1fbbc0aed96f6563770f8d79fe0eb6a5",
+                "reference": "df69a1af1fbbc0aed96f6563770f8d79fe0eb6a5",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/database": "^5.8 || ^6.0 || ^7.0",
+                "illuminate/support": "^5.8 || ^6.0 || ^7.0",
+                "php": "^7.1.3"
+            },
+            "require-dev": {
+                "doctrine/dbal": "^2.10",
+                "orchestra/database": "3.8.* || 3.9.* || ^4.0",
+                "orchestra/testbench": "3.8.* || 3.9.* || ^4.0",
+                "phpunit/phpunit": "^7.5 || ^8.4 || ^9.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Sushi\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Caleb Porzio",
+                    "email": "calebporzio@gmail.com"
+                }
+            ],
+            "description": "Eloquent's missing \"array\" driver.",
+            "funding": [
+                {
+                    "url": "https://github.com/calebporzio",
+                    "type": "github"
+                }
+            ],
+            "time": "2020-03-04T02:49:53+00:00"
         },
         {
             "name": "composer/ca-bundle",
@@ -8851,6 +8963,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "aerni/snipcart": 10,
         "statamic/cms": 10
     },
     "prefer-stable": true,
